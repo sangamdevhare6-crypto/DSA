@@ -7,7 +7,6 @@ public:
             int digit = x % 10;
             x /= 10;
 
-            // Check overflow before multiplying by 10
             if (result > INT_MAX / 10 ||
                 (result == INT_MAX / 10 && digit > 7)) {
                 return 0;
